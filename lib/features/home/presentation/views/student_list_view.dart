@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/features/home/domain/entities/university_student_without_car.dart';
-import 'package:flutter_application_1/features/home/presentation/views/student_card_view.dart';
+import 'package:profile_page/features/home/domain/entities/university_student_without_car.dart';
+import 'package:profile_page/features/home/presentation/views/student_card_view.dart';
 
 class StudentListView extends StatefulWidget {
   const StudentListView({super.key, required this.students, required this.onAccept});
