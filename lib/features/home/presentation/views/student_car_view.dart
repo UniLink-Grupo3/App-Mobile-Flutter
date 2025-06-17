@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/features/home/domain/entities/university_student_without_car.dart';
+import 'package:profile_page/features/home/domain/entities/university_student_without_car.dart';
 
 class StudentCardView extends StatelessWidget {
   const StudentCardView({super.key, required this.student, required this.onAccept});
