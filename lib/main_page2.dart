@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:profile_page/profile_page.dart';
+import 'package:profile_page/features/profile/presentation/pages/profile_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
