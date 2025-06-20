@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:profile_page/features/home/domain/entities/university_student_without_car.dart';
 import 'package:profile_page/features/home/presentation/pages/request_trip_page.dart';
-import 'package:profile_page/features/home/presentation/pages/start_trip_page.dart';
+import 'package:profile_page/features/home/presentation/pages/star_trip_page.dart';
 
 
 class StarPage extends StatefulWidget {

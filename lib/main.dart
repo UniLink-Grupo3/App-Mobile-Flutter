@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:profile_page/main_page.dart';
+import 'package:profile_page/features/app/presentation/main_page.dart';
+
 
 void main() {
   runApp(const MainApp());

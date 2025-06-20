@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:profile_page/features/trip/presentation/pages/trip_page.dart';
 import 'package:profile_page/features/home/domain/entities/university_student_without_car.dart';
 import 'package:profile_page/features/home/presentation/pages/star_page.dart';
+import 'package:profile_page/profile_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -88,7 +89,7 @@ class _MainPageState extends State<MainPage> {
         acceptedStudents: _acceptedStudents,
         onClear: _clearAcceptedStudents,
       ),
-      const Text('Profile Page'),
+      ProfilePage(),
     ];
 
     return Scaffold(
