@@ -117,6 +117,7 @@ class _MainPageState extends State<MainPage> {
       ),
       body: SafeArea(child: pages[_selectedIndex]),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Color.fromARGB(255, 88, 116, 176),
         currentIndex: _selectedIndex,
         onTap: (index) {
           setState(() {
