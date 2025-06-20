@@ -93,11 +93,12 @@ class _MainPageState extends State<MainPage> {
     ];
 
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         flexibleSpace: SafeArea(
           child: Container(
             decoration: const BoxDecoration(
-              color: Color.fromARGB(255, 158, 148, 148),
+              color: Color.fromARGB(255, 88, 116, 176),
             ),
             child: Row(
               children: [
@@ -122,6 +123,7 @@ class _MainPageState extends State<MainPage> {
             _selectedIndex = index;
           });
         },
+        selectedItemColor: Colors.white,
         type: BottomNavigationBarType.fixed,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
