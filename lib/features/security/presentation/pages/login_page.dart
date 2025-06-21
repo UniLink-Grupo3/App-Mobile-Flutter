@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:profile_page/features/app/presentation/main_page.dart';
+import 'package:profile_page/features/security/presentation/pages/register_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -70,7 +72,14 @@ class _LoginPageState extends State<LoginPage> {
               width: 200,
               height: 50,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(
+                      builder: (context) => MainPage(),
+                    ),
+                    );
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.lightBlue,
                 ),
@@ -81,11 +90,21 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
             const Spacer(),
-            const Padding(
+            Padding(
               padding: EdgeInsets.only(bottom: 16.0),
-              child: Text(
-                '¿No tienes cuenta? Regístrate',
-                style: TextStyle(color: Colors.purple, fontSize: 14),
+              child: GestureDetector(
+                onTap: (){
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(
+                      builder: (context) => RegisterPage(),
+                    ),
+                    );
+                }, 
+                child: Text(
+                  '¿No tienes cuenta? Regístrate',
+                  style: TextStyle(color: Colors.purple, fontSize: 14),
+                ),
               ),
             ),
           ],
