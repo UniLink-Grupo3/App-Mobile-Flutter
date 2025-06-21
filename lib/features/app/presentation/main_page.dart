@@ -102,7 +102,7 @@ class _MainPageState extends State<MainPage> {
             ),
             child: Row(
               children: [
-                Image.asset('assets/logo.jpg'),
+                Image.asset('assets/logo.png'),
                 const SizedBox(width: 10),
                 const Text("RideUp", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
                 const Spacer(),
