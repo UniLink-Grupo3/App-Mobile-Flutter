@@ -97,9 +97,14 @@ class ProfilePage extends StatelessWidget {
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: Size(double.infinity, 50),
-                    
+                    backgroundColor: Color.fromARGB(255, 88, 116, 176)
                   ),
-                  child: Text('Save'),
+                  child: Text(
+                    'Save',
+                    style: TextStyle(
+                      color: Colors.white
+                    )
+                    ),
                 ),
               ),
             ),
