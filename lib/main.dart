@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:profile_page/main_page.dart';
+import 'package:profile_page/features/security/presentation/pages/login_page.dart';
+
 
 void main() {
   runApp(const MainApp());
@@ -13,7 +14,7 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: MainPage(),
+        body: LoginPage(),
       ),
     );
   }

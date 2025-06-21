@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:profile_page/main_page.dart';
+import 'package:profile_page/features/app/presentation/main_page.dart';
+
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -7,6 +8,7 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         leading: IconButton(
           onPressed: (){
@@ -95,9 +97,14 @@ class ProfilePage extends StatelessWidget {
                   },
                   style: ElevatedButton.styleFrom(
                     minimumSize: Size(double.infinity, 50),
-                    
+                    backgroundColor: Color.fromARGB(255, 88, 116, 176)
                   ),
-                  child: Text('Save'),
+                  child: Text(
+                    'Save',
+                    style: TextStyle(
+                      color: Colors.white
+                    )
+                    ),
                 ),
               ),
             ),
